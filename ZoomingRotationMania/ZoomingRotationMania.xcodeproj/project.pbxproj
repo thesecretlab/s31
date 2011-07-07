@@ -1,0 +1,288 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6895390C13C67C3A0031BAA0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6895390B13C67C3A0031BAA0 /* UIKit.framework */; };
+		6895390E13C67C3A0031BAA0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6895390D13C67C3A0031BAA0 /* Foundation.framework */; };
+		6895391013C67C3A0031BAA0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6895390F13C67C3A0031BAA0 /* CoreGraphics.framework */; };
+		6895391613C67C3B0031BAA0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6895391413C67C3A0031BAA0 /* InfoPlist.strings */; };
+		6895391913C67C3B0031BAA0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6895391813C67C3B0031BAA0 /* main.m */; };
+		6895391C13C67C3B0031BAA0 /* ZoomingRotationManiaAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6895391B13C67C3B0031BAA0 /* ZoomingRotationManiaAppDelegate.m */; };
+		6895391F13C67C3B0031BAA0 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6895391D13C67C3B0031BAA0 /* MainWindow.xib */; };
+		6895392213C67C3B0031BAA0 /* ZoomingRotationManiaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6895392113C67C3B0031BAA0 /* ZoomingRotationManiaViewController.m */; };
+		6895392513C67C3B0031BAA0 /* ZoomingRotationManiaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6895392313C67C3B0031BAA0 /* ZoomingRotationManiaViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6895390713C67C3A0031BAA0 /* ZoomingRotationMania.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZoomingRotationMania.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6895390B13C67C3A0031BAA0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6895390D13C67C3A0031BAA0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6895390F13C67C3A0031BAA0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6895391313C67C3A0031BAA0 /* ZoomingRotationMania-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ZoomingRotationMania-Info.plist"; sourceTree = "<group>"; };
+		6895391513C67C3A0031BAA0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6895391713C67C3B0031BAA0 /* ZoomingRotationMania-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZoomingRotationMania-Prefix.pch"; sourceTree = "<group>"; };
+		6895391813C67C3B0031BAA0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6895391A13C67C3B0031BAA0 /* ZoomingRotationManiaAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZoomingRotationManiaAppDelegate.h; sourceTree = "<group>"; };
+		6895391B13C67C3B0031BAA0 /* ZoomingRotationManiaAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZoomingRotationManiaAppDelegate.m; sourceTree = "<group>"; };
+		6895391E13C67C3B0031BAA0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		6895392013C67C3B0031BAA0 /* ZoomingRotationManiaViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZoomingRotationManiaViewController.h; sourceTree = "<group>"; };
+		6895392113C67C3B0031BAA0 /* ZoomingRotationManiaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZoomingRotationManiaViewController.m; sourceTree = "<group>"; };
+		6895392413C67C3B0031BAA0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ZoomingRotationManiaViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6895390413C67C3A0031BAA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6895390C13C67C3A0031BAA0 /* UIKit.framework in Frameworks */,
+				6895390E13C67C3A0031BAA0 /* Foundation.framework in Frameworks */,
+				6895391013C67C3A0031BAA0 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		689538FC13C67C3A0031BAA0 = {
+			isa = PBXGroup;
+			children = (
+				6895391113C67C3A0031BAA0 /* ZoomingRotationMania */,
+				6895390A13C67C3A0031BAA0 /* Frameworks */,
+				6895390813C67C3A0031BAA0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6895390813C67C3A0031BAA0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6895390713C67C3A0031BAA0 /* ZoomingRotationMania.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6895390A13C67C3A0031BAA0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6895390B13C67C3A0031BAA0 /* UIKit.framework */,
+				6895390D13C67C3A0031BAA0 /* Foundation.framework */,
+				6895390F13C67C3A0031BAA0 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6895391113C67C3A0031BAA0 /* ZoomingRotationMania */ = {
+			isa = PBXGroup;
+			children = (
+				6895391A13C67C3B0031BAA0 /* ZoomingRotationManiaAppDelegate.h */,
+				6895391B13C67C3B0031BAA0 /* ZoomingRotationManiaAppDelegate.m */,
+				6895391D13C67C3B0031BAA0 /* MainWindow.xib */,
+				6895392013C67C3B0031BAA0 /* ZoomingRotationManiaViewController.h */,
+				6895392113C67C3B0031BAA0 /* ZoomingRotationManiaViewController.m */,
+				6895392313C67C3B0031BAA0 /* ZoomingRotationManiaViewController.xib */,
+				6895391213C67C3A0031BAA0 /* Supporting Files */,
+			);
+			path = ZoomingRotationMania;
+			sourceTree = "<group>";
+		};
+		6895391213C67C3A0031BAA0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6895391313C67C3A0031BAA0 /* ZoomingRotationMania-Info.plist */,
+				6895391413C67C3A0031BAA0 /* InfoPlist.strings */,
+				6895391713C67C3B0031BAA0 /* ZoomingRotationMania-Prefix.pch */,
+				6895391813C67C3B0031BAA0 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6895390613C67C3A0031BAA0 /* ZoomingRotationMania */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6895392813C67C3B0031BAA0 /* Build configuration list for PBXNativeTarget "ZoomingRotationMania" */;
+			buildPhases = (
+				6895390313C67C3A0031BAA0 /* Sources */,
+				6895390413C67C3A0031BAA0 /* Frameworks */,
+				6895390513C67C3A0031BAA0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZoomingRotationMania;
+			productName = ZoomingRotationMania;
+			productReference = 6895390713C67C3A0031BAA0 /* ZoomingRotationMania.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		689538FE13C67C3A0031BAA0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Secret Lab";
+			};
+			buildConfigurationList = 6895390113C67C3A0031BAA0 /* Build configuration list for PBXProject "ZoomingRotationMania" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 689538FC13C67C3A0031BAA0;
+			productRefGroup = 6895390813C67C3A0031BAA0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6895390613C67C3A0031BAA0 /* ZoomingRotationMania */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6895390513C67C3A0031BAA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6895391613C67C3B0031BAA0 /* InfoPlist.strings in Resources */,
+				6895391F13C67C3B0031BAA0 /* MainWindow.xib in Resources */,
+				6895392513C67C3B0031BAA0 /* ZoomingRotationManiaViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6895390313C67C3A0031BAA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6895391913C67C3B0031BAA0 /* main.m in Sources */,
+				6895391C13C67C3B0031BAA0 /* ZoomingRotationManiaAppDelegate.m in Sources */,
+				6895392213C67C3B0031BAA0 /* ZoomingRotationManiaViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6895391413C67C3A0031BAA0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6895391513C67C3A0031BAA0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6895391D13C67C3B0031BAA0 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6895391E13C67C3B0031BAA0 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		6895392313C67C3B0031BAA0 /* ZoomingRotationManiaViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6895392413C67C3B0031BAA0 /* en */,
+			);
+			name = ZoomingRotationManiaViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6895392613C67C3B0031BAA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		6895392713C67C3B0031BAA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		6895392913C67C3B0031BAA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZoomingRotationMania/ZoomingRotationMania-Prefix.pch";
+				INFOPLIST_FILE = "ZoomingRotationMania/ZoomingRotationMania-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6895392A13C67C3B0031BAA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZoomingRotationMania/ZoomingRotationMania-Prefix.pch";
+				INFOPLIST_FILE = "ZoomingRotationMania/ZoomingRotationMania-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6895390113C67C3A0031BAA0 /* Build configuration list for PBXProject "ZoomingRotationMania" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6895392613C67C3B0031BAA0 /* Debug */,
+				6895392713C67C3B0031BAA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6895392813C67C3B0031BAA0 /* Build configuration list for PBXNativeTarget "ZoomingRotationMania" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6895392913C67C3B0031BAA0 /* Debug */,
+				6895392A13C67C3B0031BAA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 689538FE13C67C3A0031BAA0 /* Project object */;
+}
