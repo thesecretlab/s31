@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ZoomingRotationManiaViewController : UIViewController {
+@interface ZoomingRotationManiaViewController : UIViewController <UIGestureRecognizerDelegate> {
     
     IBOutlet UIView *zoomingRotationView;
     

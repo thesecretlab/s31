@@ -22,19 +22,18 @@
     [zoomingRotationView addGestureRecognizer:rotation];
     [rotation release];
     
+    pinch.delegate = self;
+    rotation.delegate = self;
+    
     zoomingRotationViewScale = 1.0;
 }
 
 - (void) pinched:(UIPinchGestureRecognizer*)pinch {
-    
-    
     if (pinch.state == UIGestureRecognizerStateChanged) {
-        
         CGAffineTransform currentTransform = zoomingRotationView.transform;
         CGFloat rotation = atan2f(currentTransform.b, currentTransform.a);
         CGAffineTransform newTransform = CGAffineTransformMakeRotation(rotation);
 
-        
         CGFloat newScale = zoomingRotationViewScale * pinch.scale;
         newTransform = CGAffineTransformScale(newTransform, newScale, newScale);
         zoomingRotationView.transform = newTransform;
@@ -54,6 +53,18 @@
     }
 }
 
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer {
+    
+    if (([gestureRecognizer isKindOfClass:[UIPinchGestureRecognizer class]] || 
+        [gestureRecognizer isKindOfClass:[UIRotationGestureRecognizer class]]) &&
+        ([otherGestureRecognizer isKindOfClass:[UIPinchGestureRecognizer class]] || 
+         [otherGestureRecognizer isKindOfClass:[UIRotationGestureRecognizer class]])) {
+        return YES;
+    }
+    return NO;
+    
+}
+
 - (void)dealloc
 {
     [zoomingRotationView release];
@@ -69,7 +80,7 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    return YES;
+    return UIInterfaceOrientationIsPortrait(interfaceOrientation);
 }
 
 @end
