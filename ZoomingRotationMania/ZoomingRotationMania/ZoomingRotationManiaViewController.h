@@ -10,6 +10,9 @@
 
 @interface ZoomingRotationManiaViewController : UIViewController {
     
+    IBOutlet UIView *zoomingRotationView;
+    
+    CGFloat zoomingRotationViewScale;
 }
 
 @end

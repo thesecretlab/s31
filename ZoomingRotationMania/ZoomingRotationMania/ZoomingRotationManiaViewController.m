@@ -10,39 +10,57 @@
 
 @implementation ZoomingRotationManiaViewController
 
-- (void)dealloc
-{
-    [super dealloc];
-}
-
-- (void)didReceiveMemoryWarning
-{
-    // Releases the view if it doesn't have a superview.
-    [super didReceiveMemoryWarning];
-    
-    // Release any cached data, images, etc that aren't in use.
-}
-
-#pragma mark - View lifecycle
-
-/*
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    UIPinchGestureRecognizer* pinch = [[UIPinchGestureRecognizer alloc] initWithTarget:self action:@selector(pinched:)];
+    [zoomingRotationView addGestureRecognizer:pinch];
+    [pinch release];
+    
+    UIRotationGestureRecognizer* rotation = [[UIRotationGestureRecognizer alloc] initWithTarget:self action:@selector(rotated:)];
+    [zoomingRotationView addGestureRecognizer:rotation];
+    [rotation release];
+    
+    zoomingRotationViewScale = 1.0;
 }
-*/
+
+- (void) pinched:(UIPinchGestureRecognizer*)pinch {
+    if (pinch.state == UIGestureRecognizerStateChanged) {
+        CGFloat newScale = zoomingRotationViewScale * pinch.scale;
+        CGAffineTransform transform = CGAffineTransformMakeScale(newScale, newScale);
+        zoomingRotationView.transform = transform;
+    }
+    if (pinch.state == UIGestureRecognizerStateEnded || pinch.state == UIGestureRecognizerStateCancelled) {
+        zoomingRotationViewScale *= pinch.scale;
+    }
+}
+
+- (void) rotated:(UIRotationGestureRecognizer*) rotation {
+    if (rotation.state == UIGestureRecognizerStateChanged) {
+        CGFloat rotationAmount = [rotation rotation];
+        CGAffineTransform transform  = zoomingRotationView.transform;
+        transform = CGAffineTransformRotate(transform, rotationAmount);
+        rotation.rotation = 0;
+        zoomingRotationView.transform = transform;
+    }
+}
+
+- (void)dealloc
+{
+    [zoomingRotationView release];
+    [super dealloc];
+}
 
 - (void)viewDidUnload
 {
+    [zoomingRotationView release];
+    zoomingRotationView = nil;
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    // Return YES for supported orientations
     return YES;
 }
 
