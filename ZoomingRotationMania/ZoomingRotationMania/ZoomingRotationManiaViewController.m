@@ -26,10 +26,18 @@
 }
 
 - (void) pinched:(UIPinchGestureRecognizer*)pinch {
+    
+    
     if (pinch.state == UIGestureRecognizerStateChanged) {
+        
+        CGAffineTransform currentTransform = zoomingRotationView.transform;
+        CGFloat rotation = atan2f(currentTransform.b, currentTransform.a);
+        CGAffineTransform newTransform = CGAffineTransformMakeRotation(rotation);
+
+        
         CGFloat newScale = zoomingRotationViewScale * pinch.scale;
-        CGAffineTransform transform = CGAffineTransformMakeScale(newScale, newScale);
-        zoomingRotationView.transform = transform;
+        newTransform = CGAffineTransformScale(newTransform, newScale, newScale);
+        zoomingRotationView.transform = newTransform;
     }
     if (pinch.state == UIGestureRecognizerStateEnded || pinch.state == UIGestureRecognizerStateCancelled) {
         zoomingRotationViewScale *= pinch.scale;
