@@ -39,15 +39,15 @@ extern NSString* const SLTutorialStageKey;
 // Leave the last step as SLTutorialComplete.
 typedef enum  {
 
-// ***** EDIT THIS PART *****
-    SBLTutorialTapFirstNode = 0,
-    SBLTutorialTakePhoto,
-    SBLTutorialSubmitNode,
-    SBLTutorialEndTurn,
-    SBLTutorialDragVoteSlider,
-    SBLTutorialSubmitVote,
-    SBLTutorialComplete
-// ***** EDIT THIS PART *****
+// ***** v EDIT THIS PART v *****
+
+// These are sample tutorial steps. You'll want to replace them.
+
+    SLTutorialBuildABuilding = 0,   // step 1, build a building
+    SLTutorialSelectAUnit,          // step 2, select a unit
+    SLTutorialDefeatAnEnemy,        // step 3, defeat an enemy
+    SLTutorialComplete              // tutorial complete
+// ***** ^ EDIT THIS PART ^ *****
 
 } SLTutorialStage;
 
